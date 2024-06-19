@@ -131,11 +131,13 @@ $arSelect = array_merge($arParams["FIELD_CODE"], array(
 			'IPROPERTY_VALUES'
 		);
 
+		// Проверка активных полей
 		$arResult["FIELDS"] = array();
 		foreach($arParams["FIELD_CODE"] as $code)
 			if(array_key_exists($code, $arResult))
 				$arResult["FIELDS"][$code] = $arResult[$code];
 
+		// Перечитка свойств элемента
 		if($bGetProperty)
 			$arResult["PROPERTIES"] = $obElement->GetProperties();
 		$arResult["DISPLAY_PROPERTIES"]=array();
