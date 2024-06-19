@@ -151,6 +151,7 @@ $arSelect = array_merge($arParams["FIELD_CODE"], array(
 			}
 		}
 
+		// Проверка на ID и Тип
 		$arResult["IBLOCK"] = GetIBlock($arResult["IBLOCK_ID"], $arResult["IBLOCK_TYPE"]);
 
 		$arResult["SECTION"] = array("PATH" => array());
