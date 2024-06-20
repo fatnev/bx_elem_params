@@ -8,6 +8,7 @@ use Bitrix\Main\Context,
 
 \Bitrix\Main\Loader::includeModule('iblock');
 
+// Компонент
 CPageOption::SetOptionString("main", "nav_page_in_session", "N");
 
 if(!isset($arParams["CACHE_TIME"]))
